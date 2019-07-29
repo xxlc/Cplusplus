@@ -1,0 +1,4 @@
+2019-07-27 00:02:27,115  [WARN] hello warn
+2019-07-27 00:02:27,116  [INFO] hello info
+2019-07-27 00:02:27,116  [ERROR] hello error
+2019-07-27 00:02:27,116  [DEBUG] hello debug
