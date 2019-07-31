@@ -130,9 +130,7 @@ std::istream& operator>>(std::istream &is, String &str){
 	str._pstr = new char[str._capacity+1]();
 	char ch;
 	int flag = 0;
-	while(is>>ch, !is.eof()){
-		//其实 ch 永远不会出现'\n'和' '，
-		//在cin的内部跳过了，所以每次都以eof跳出循环
+	while(ch=is.get(), !is.eof()){
 		if(ch!='\n'&&ch!=' '){
 			flag = 1;
 			str.push_back(ch);
